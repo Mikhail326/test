@@ -8,14 +8,17 @@
 <body>
 
   <div class="container">
-    <form class="form" action="">
+    <form class="form" action="form.php" method="post">
       <div class="form_wrapper">
-        <input class="form_number" type="text" name="number" placeholder="Ваш номер..." id="number">
-        <button class="form_submit" type="submit">заказать</button>
+        <input class="form_number" type="tel" name="number" placeholder="Ваш номер..." id="number">
+        <button name="send" class="form_submit" type="submit">
+          <i class="fa-solid fa-closed-captioning"></i>
+          <span>заказать</span>
+        </button>
       </div>
     </form>
     <div class="form_error">
-      <span>Поле должно быть заполнено</span>
+      <span id="error_message"></span>
     </div>
   </div>
 
